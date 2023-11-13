@@ -1,13 +1,173 @@
+:root {
+  --light-grey: #f8f9fa;
+  --light-grey-2: #e9ecef
+  --dark-grey: #212529;
+
+  --main-color: #51cf66
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color: var(--dark-grey);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--light-grey);
+  line-height: 1.5;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+/* GLOBAL */
+h4 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.input-item {
+  width: 70%;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  padding-left: 0.7rem;
+}
+
+form {
+  display: flex;
+  font-size: 2rem;
+
+  width: 90%;
+  justify-content: center;
+}
+
+.button-add {
+  width: 10rem;
+  height: 3rem;
+
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 550;
+
+  cursor: pointer;
+}
+
+.section-center {
+  margin-top: 5%;
+  padding: 2rem;
+
+  background-color: #fff;
+  width: 50rem;
+
+  width: 90vw;
+  max-width: 50rem;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.item-list {
+  width: 90%;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.single-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-name {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+.item-name-marked {
+  text-decoration:line-through;
+}
+
+.item-name {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.checkbox {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+.buttons-div {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin-left: 2rem;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: fit-content;
+
+  cursor: pointer;
+
+}
+
+.button-delete {
+  background-color: transparent;
+  color: #ffa94d;
+}
+
+.icon-bin {
+  font-size: 3rem;
+}
+.icon-edit {
+  font-size: 1.5rem;
+}
+
+.button-edit {
+  background-color: var(--main-color);
+}
+
+.button-delete-all {
+  background-color: #fd7e14;
+  padding: 1rem;
+
+  margin-top: 1.5rem;
 }
