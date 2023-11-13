@@ -139,31 +139,46 @@ form {
 .button {
   font-size: 1.2rem;
   padding: 0.3rem;
-  margin-left: 2rem;
+  
   color: #fff;
   border: none;
   border-radius: 4px;
   height: fit-content;
 
   cursor: pointer;
-
+  pointer-events: 'none';
+  z-index: 100;
+  
 }
 
 .button-delete {
   background-color: transparent;
   color: #ffa94d;
-}
 
-.icon-bin {
-  font-size: 3rem;
-}
-.icon-edit {
-  font-size: 1.5rem;
+  /* height: 2rem;
+  width: 2rem; */
+  margin-left: 2rem;
 }
 
 .button-edit {
   background-color: var(--main-color);
+  z-index: 10;
 }
+
+
+.icon-bin {
+  font-size: 3rem;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.icon-edit {
+  font-size: 1.5rem;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
 
 .button-delete-all {
   background-color: #fd7e14;
